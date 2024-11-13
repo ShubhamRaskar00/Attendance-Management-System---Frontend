@@ -1,0 +1,7 @@
+.checkinout-container .show-checkout:hover .checkout-btn {
+    display: block;
+}
+
+.checkinout-container .show-checkout:hover .total-time {
+    display: none;
+}

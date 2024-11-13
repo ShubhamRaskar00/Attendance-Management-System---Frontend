@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Attendance Management System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Attendance Management System built with React.js and Material-UI.
+
+## Technology Stack
+
+- React.js 18
+- Material-UI v5
+- Axios for API integration
+- React Router v6
+- Moment.js for date handling
+
+## Prerequisites
+
+- Node.js 16.x or higher
+- npm 8.x or higher
+- Git
+
+## Project Structure
+
+```
+src/
+├── apiService/     # Reusable, api service
+├── assets/          # Images, icons, and other static files
+├── components/      # Reusable UI components
+├── config/          # Configuration files
+├── hooks/          # Custom React hooks
+├── pages/          # Page components
+└── utils/          # Utility functions and helpers
+```
+
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-repo/attendance-system.git
+cd client
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Create `.env` file in the root directory
+```env
+REACT_APP_BASE_URL="Your_server_url"
+```
+
+4. Start the development server
+```bash
+npm start
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+```bash
+# Start development server
+npm start
 
-### `npm start`
+# Build for production
+npm run build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Run tests
+npm test
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Run ESLint
+npm run lint
 
-### `npm test`
+# Fix ESLint errors
+npm run lint:fix
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Features
 
-### `npm run build`
+### Authentication
+- Login/Logout functionality
+- Role-based access control
+- Password reset flow
+- Session management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dashboard
+- Employee attendance overview
+- Work hours tracking
+- Performance metrics
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Attendance Management
+- Check-in/Check-out
+- Attendance history
+- Leave management
+- Report generation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure Details
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### pages/
+- `auth/` - Authentication pages
+- `dashboard/` - Dashboard pages
+- `attendance/` - Attendance management pages
+- `mainPage/` - Main page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork the repository (`git fetch --all`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
