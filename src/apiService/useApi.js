@@ -7,12 +7,17 @@ const useApi = () => {
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
 
-  const callApi = async (method, url, payload = null) => {
+  const callApi = async (
+    method,
+    url,
+    payload = null,
+    responseType = "json"
+  ) => {
     try {
       setLoading(true);
       setError(null);
 
-      const response = await apiService[method](url, payload);
+      const response = await apiService[method](url, payload, { responseType });
       setData(response);
       return response;
     } catch (err) {

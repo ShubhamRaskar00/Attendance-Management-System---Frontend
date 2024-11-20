@@ -36,11 +36,11 @@ api.interceptors.response.use(
 )
 
 const apiService = {
-  get: (url, params) => api.get(url, { params }),
-  post: (url, data) => api.post(url, data),
-  put: (url, data) => api.put(url, data),
-  patch: (url, data) => api.patch(url, data),
-  delete: (url) => api.delete(url),
+  get: (url, params, options = {}) => api.get(url, { params, ...options }),
+  post: (url, data, options = {}) => api.post(url, data, options),
+  put: (url, data, options = {}) => api.put(url, data, options),
+  patch: (url, data, options = {}) => api.patch(url, data, options),
+  delete: (url, options = {}) => api.delete(url, options),
 };
 
 export default apiService;

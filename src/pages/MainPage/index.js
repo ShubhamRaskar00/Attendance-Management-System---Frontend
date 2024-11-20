@@ -16,7 +16,7 @@ function MainPage() {
       <Header />
 
       <div>
-        <Container maxWidth="xl" className="py-6 flex flex-col h-[84vh] overflow-x-auto">
+        <Container maxWidth="xl" className="py-6 flex flex-col min-h-[84vh] overflow-x-auto">
           <div className="pb-2">
             <Breadcrumbs maxItems={2} aria-label="breadcrumbs">
               {paths.map((path) => (
