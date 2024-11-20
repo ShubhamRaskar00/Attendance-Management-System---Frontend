@@ -15,17 +15,20 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   const icons = [
-    { Icon: YouTubeIcon, url: "https://youtube.com" },
-    { Icon: XIcon, url: "https://twitter.com" },
-    { Icon: LinkedInIcon, url: "https://linkedin.com" },
-    { Icon: RedditIcon, url: "https://reddit.com" },
+    { Icon: YouTubeIcon, url: "https://www.youtube.com/@SR-SHUBH" },
+    { Icon: XIcon, url: "https://x.com/sr_shubh99362" },
+    {
+      Icon: LinkedInIcon,
+      url: "https://www.linkedin.com/in/shubham-raskar-5126b5239/",
+    },
+    { Icon: RedditIcon, url: "https://www.reddit.com/user/sr_shubh/" },
   ];
   return (
     <AppBar position="static" sx={{ background: "black", color: "white" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box>
-            <Link to="/me">
+            <Link to="/home">
               <Typography
                 variant="h6"
                 noWrap
